@@ -1,0 +1,17 @@
+/************************************************/
+/* Author : Amr Abbdeen                         */
+/* Date   : 5 Feb. 2019                         */
+/* Version: V01                                 */          
+/************************************************/
+
+/*Comment: inital direction for I/O pins       */
+/*Range  : DIO_u8_PIN_INIT_OUTPUT              */
+/*         DIO_u8_PIN_INIT_INPUT               */
+
+#ifndef LED_INTERFACE_H
+#define LED_INTERFACE_H
+
+u8 LED_u8SetLedOn(u8  Copy_u8LedNb);
+u8 LED_u8SetLedOff(u8  Copy_u8ledNb);
+
+#endif

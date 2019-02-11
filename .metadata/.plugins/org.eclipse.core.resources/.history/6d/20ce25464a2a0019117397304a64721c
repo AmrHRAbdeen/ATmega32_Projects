@@ -1,0 +1,50 @@
+/************************************************/
+/* Author : Amr Abbdeen                         */
+/* Date   : 5 Feb. 2019                         */
+/* Version: V01                                 */          
+/************************************************/
+
+/*Standard Data types GCC tool chain*/
+
+/* Unsigned 8 bit type                          */
+typedef unsigned char      u8 ;
+
+/* Unsigned 16 bit type                          */
+typedef unsigned short int u16;
+
+/* Unsigned 32 bit type                          */
+typedef unsigned long int  u32;
+
+/* Unsigned 16 bit type                          */
+typedef signed short int   s16;
+
+/* Float 8 bit type                              */
+typedef signed char        s8 ;
+
+/* Unsigned 32 bit type                          */
+typedef signed long int    s32;
+
+/* Unsigned 32 bit type                          */
+
+typedef float              f32;
+
+/* Unsigned 8 bit type                          */
+typedef long               f64;
+
+typedef union {
+	struct {
+		u8 BIT0:1;
+		u8 BIT1:1;
+		u8 BIT2:1;
+		u8 BIT3:1;
+		u8 BIT4:1;
+		u8 BIT5:1;
+		u8 BIT6:1;
+		u8 BIT7:1;
+	} BitAccess;
+	u8 ByteAccess;
+}Register;
+
+/* ERROR STATE */
+#define STD_u8_ERROR (u8)1
+#define STD_ERROR_OK (u8)0

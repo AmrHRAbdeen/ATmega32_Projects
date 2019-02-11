@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SwitchDriver/SSD_config.h&apos; to &apos;SW_config.h&apos;" description="Rename resource &apos;SSD_config.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SSD_config.h" name="SW_config.h" stamp="1549562094517" updateReferences="true"/>
+</session>

@@ -1,0 +1,1 @@
+Git CMD Repo Alias : EmbeddedProjects

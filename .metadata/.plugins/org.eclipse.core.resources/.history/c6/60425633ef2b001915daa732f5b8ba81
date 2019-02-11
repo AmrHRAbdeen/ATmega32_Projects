@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 9, 2019
+ *      Author: Amr Abdeen
+ */
+#include <avr/io.h>
+
+#include <util/delay.h>
+
+int main(void)
+{
+	DDRA=0x00;
+	DDRB=0xFF;
+	while(1)
+	{
+		if(PINA==0b00000001)
+		{
+
+		}
+
+	}
+
+return 0;
+}
+
+

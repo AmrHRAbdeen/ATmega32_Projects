@@ -1,0 +1,38 @@
+/**************************************************/
+/* Author      :  amr Abdeen                      */
+/* Date        : 7/2/2019                         */
+/* Description :                                  */
+/*                                                */
+/*                                                */
+/**************************************************/
+#include "STD_TYPES.h"
+#include "DIO_interface.h"
+
+#include "SWI_interface.h"
+#include <util/delay.h>
+
+int main(void){
+
+	/* Set direction */
+	DIO_voidInit();
+	u8 Local_SWReadVal;
+	u8 Local_SWReadVal2;
+	while(1)
+	{
+		SWI_u8GetSwitchState(1,&Local_SWReadVal);
+		SWI_u8GetSwitchState(2,&Local_SWReadVal2);
+
+		if(Local_SWReadVal == SWI_SW_PRESSED)
+		{
+			DIO_u8SetPinValue(DIO_u8_PIN8,DIO_u8_PIN_HIGH);
+		}
+		else if(Local_SWReadVal == SWI_SW_RELEASED)
+		{
+			DIO_u8SetPinValue(DIO_u8_PIN8,DIO_u8_PIN_LOW);
+		}
+
+	}
+
+	return 0 ;
+}
+

@@ -1,0 +1,45 @@
+15:34:16 **** Build of configuration Debug for project LEDs_Shift ****
+make all 
+Building file: ../delay.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"delay.d" -MT"delay.o" -c -o "delay.o" "../delay.c"
+In file included from ../delay.c:1:
+../config_ATmega32.h:13:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../delay.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../config_ATmega32.h:13:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: LEDs_Shift.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LEDs_Shift.map -mmcu=atmega16 -o "LEDs_Shift.elf"  ./delay.o ./main.o   
+Finished building target: LEDs_Shift.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LEDs_Shift.elf  >"LEDs_Shift.lss"
+Finished building: LEDs_Shift.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LEDs_Shift.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    3750 bytes (22.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (25.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:34:17 Build Finished (took 1s.444ms)
+

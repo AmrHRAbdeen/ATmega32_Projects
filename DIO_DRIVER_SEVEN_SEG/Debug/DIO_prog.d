@@ -1,0 +1,8 @@
+DIO_prog.o DIO_prog.o: ../DIO_prog.c ../STD_TYPES.h \
+  ../ATMEGA32_REGISTERES.h ../ATMEGA_CONFIGS.h
+
+../STD_TYPES.h:
+
+../ATMEGA32_REGISTERES.h:
+
+../ATMEGA_CONFIGS.h:

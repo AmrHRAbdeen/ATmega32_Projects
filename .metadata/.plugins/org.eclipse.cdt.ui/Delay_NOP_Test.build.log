@@ -1,0 +1,21 @@
+17:27:36 **** Incremental Build of configuration Debug for project Delay_NOP_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+../ATmega32_Regsiters.h:25:1: warning: "PIND" redefined
+../ATmega32_Regsiters.h:21:1: warning: this is the location of the previous definition
+../main.c:9: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:10: error: 'Register' undeclared (first use in this function)
+../main.c:10: error: (Each undeclared identifier is reported only once
+../main.c:10: error: for each function it appears in.)
+../main.c:10: error: expected expression before ')' token
+../main.c:12: error: expected expression before ')' token
+../main.c:12: error: 'x01' undeclared (first use in this function)
+../main.c:14: error: expected expression before ')' token
+make: *** [main.o] Error 1
+
+17:27:37 Build Finished (took 711ms)
+

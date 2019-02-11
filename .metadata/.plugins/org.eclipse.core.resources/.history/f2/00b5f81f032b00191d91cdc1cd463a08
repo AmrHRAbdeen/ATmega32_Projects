@@ -1,0 +1,15 @@
+/*
+ * SW_prog.c
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+
+u8 SWI_u8GetSwitchState(u8 *Pu8State){
+	/*Validate Input*/
+	if
+
+
+}
+
+

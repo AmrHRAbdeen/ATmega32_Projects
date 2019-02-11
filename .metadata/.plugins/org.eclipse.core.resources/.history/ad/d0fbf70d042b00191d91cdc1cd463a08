@@ -1,0 +1,17 @@
+/*
+ * SW_config.h
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+
+#ifndef SW_CONFIG_H_
+#define SW_CONFIG_H_
+
+/*Range:               */
+/* SW_PULL_UP          */
+/* SW_PULL_DWN         */
+
+#define SW_TYPE SW_PULL_UP
+
+#endif /* SW_CONFIG_H_ */

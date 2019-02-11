@@ -1,0 +1,31 @@
+/*
+ * SW_prog.c
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+#include "STD_TYPES.h"
+#include "CALC_BITS.h"
+#include "DIO_interface.h"
+#include "SW_private.h"
+#include "SW_config.h"
+
+u8 SWI_u8GetSwitchState(u8 * Copy_Pu8State){
+	/*Validate Input*/
+	u8 Local_ErrorState= ERROR_OK;
+	if(Copy_Pu8State == NULL){
+		Local_ErrorState=ERROR_NOK;
+	}
+	else
+	{
+
+
+
+
+	}
+
+
+
+}
+
+

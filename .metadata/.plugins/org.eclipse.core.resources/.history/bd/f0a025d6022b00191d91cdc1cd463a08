@@ -1,0 +1,13 @@
+/*
+ * SW_config.h
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+
+#ifndef SW_CONFIG_H_
+#define SW_CONFIG_H_
+
+#define SW_TYPE
+
+#endif /* SW_CONFIG_H_ */

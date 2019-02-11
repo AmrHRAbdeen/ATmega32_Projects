@@ -1,0 +1,38 @@
+/************************************************/
+/* Author : Amr Abbdeen                         */
+/* Date   : 5 Feb. 2019                         */
+/* Version: V01                                 */          
+/************************************************/
+
+/*Comment: inital direction for I/O pins       */
+/*Range  : DIO_u8_PIN_INIT_OUTPUT              */
+/*         DIO_u8_PIN_INIT_INPUT               */
+
+#ifndef LED_CONFIG_H
+#define LED_CONFIG_H
+
+
+#define LED_u8_NUM_OF_LEDS  6
+/*
+range : LED_u8_FORWARD
+		LED_u8_REVERSE
+*/
+u8 LED_Au8LedsTypes[LED_u8_NUM_OF_LEDS]={
+	LED_u8_FORWARD,
+	LED_u8_FORWARD,
+	LED_u8_FORWARD,
+	LED_u8_FORWARD,
+	LED_u8_FORWARD,
+	LED_u8_REVERSE
+};
+
+u8 LED_Au8LedsChannels[LED_u8_NUM_OF_LEDS]={
+	DIO_u8_PIN0,
+	DIO_u8_PIN1,
+	DIO_u8_PIN2,
+	DIO_u8_PIN3,
+	DIO_u8_PIN4,
+	DIO_u8_PIN5
+};
+
+#endif

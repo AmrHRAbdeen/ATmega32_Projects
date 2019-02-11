@@ -1,0 +1,43 @@
+15:52:54 **** Incremental Build of configuration Debug for project DIO_Assaf ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../LED_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED_prog.d" -MT"LED_prog.o" -c -o "LED_prog.o" "../LED_prog.c"
+Finished building: ../LED_prog.c
+ 
+Building target: DIO_Assaf.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Assaf.map -mmcu=atmega32 -o "DIO_Assaf.elf"  ./DIO_prog.o ./LED_prog.o ./main.o   
+Finished building target: DIO_Assaf.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Assaf.elf  >"DIO_Assaf.lss"
+Finished building: DIO_Assaf.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Assaf.elf  "DIO_Assaf.hex"
+Finished building: DIO_Assaf.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Assaf.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5536 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:52:56 Build Finished (took 1s.706ms)
+

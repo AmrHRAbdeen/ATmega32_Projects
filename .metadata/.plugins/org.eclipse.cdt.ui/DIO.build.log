@@ -1,0 +1,44 @@
+23:29:57 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"app.d" -MT"app.o" -c -o "app.o" "../app.c"
+In file included from ../app.c:8:
+e:/iti/assaf/setups/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../app.c: In function 'main':
+../app.c:16: warning: implicit declaration of function 'LED_u8LEDON'
+../app.c:18: warning: implicit declaration of function 'LED_u8LEDOFF'
+Finished building: ../app.c
+ 
+Building target: DIO.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_prog.o ./LED_program.o ./app.o   
+Finished building target: DIO.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+Finished building: DIO.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5080 bytes (15.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:29:59 Build Finished (took 1s.839ms)
+

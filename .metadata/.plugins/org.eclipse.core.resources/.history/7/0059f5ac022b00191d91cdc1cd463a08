@@ -1,0 +1,14 @@
+/*
+ * SW_private.h
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+
+#ifndef SW_PRIVATE_H_
+#define SW_PRIVATE_H_
+
+#define SW_RELEASED (u8)0
+#define SW_PRESSED  (u8)1
+
+#endif /* SW_PRIVATE_H_ */

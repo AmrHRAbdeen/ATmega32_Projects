@@ -1,0 +1,20 @@
+02:47:19 **** Incremental Build of configuration Debug for project LEDMMAtrix_7amok4a_in_GYM ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LEDMMAtrix_7amok4a_in_GYM.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5510 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:47:19 Build Finished (took 502ms)
+

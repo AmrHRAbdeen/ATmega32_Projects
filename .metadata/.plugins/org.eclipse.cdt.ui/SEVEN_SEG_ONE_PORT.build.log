@@ -1,0 +1,38 @@
+15:34:19 **** Build of configuration Debug for project SEVEN_SEG_ONE_PORT ****
+make all 
+Building file: ../delay.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"delay.d" -MT"delay.o" -c -o "delay.o" "../delay.c"
+Finished building: ../delay.c
+ 
+Building target: SEVEN_SEG_ONE_PORT.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SEVEN_SEG_ONE_PORT.map -mmcu=atmega32 -o "SEVEN_SEG_ONE_PORT.elf"  ./delay.o ./main.o   
+Finished building target: SEVEN_SEG_ONE_PORT.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SEVEN_SEG_ONE_PORT.elf  >"SEVEN_SEG_ONE_PORT.lss"
+Finished building: SEVEN_SEG_ONE_PORT.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SEVEN_SEG_ONE_PORT.elf  "SEVEN_SEG_ONE_PORT.hex"
+Finished building: SEVEN_SEG_ONE_PORT.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SEVEN_SEG_ONE_PORT.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3578 bytes (10.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:34:20 Build Finished (took 1s.355ms)
+

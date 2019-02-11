@@ -1,0 +1,40 @@
+/*
+ * SW_prog.c
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+#include "STD_TYPES.h"
+#include "BIT_CALC.h"
+#include "DIO_interface.h"
+#include "SW_private.h"
+#include "SW_config.h"
+
+u8 SWI_u8GetSwitchState(u8 Copy_u8SWNb,u8 * Copy_Pu8State){
+	/*Validate Input*/
+	u8 Local_ErrorState= ERROR_OK;
+
+	if(Copy_Pu8State == NULL)
+	{
+		Local_ErrorState=ERROR_NOK;
+	}
+	else
+	{
+		switch(LED_Au8SWTypes[Copy_u8SWNb -ARRAY_START_INDEX]){
+		      case SW_PULL_UP :
+		    	  DIO_u8GetPinValue(LED_Au8SWChannels[Copy_u8SWNb],Copy_Pu8State);
+		             break;
+		      case SW_PULL_DOWN :
+		    	  DIO_u8GetPinValue(LED_Au8SWChannels[Copy_u8SWNb],Copy_Pu8State);
+		             break;
+		       default :
+		    	   Local_ErrorState = ERROR_NOK;
+		    }
+		DIO_u8GetPinValue(SW_PIN,Copy_Pu8State);
+	}
+
+	return Local_ErrorState;
+
+}
+
+

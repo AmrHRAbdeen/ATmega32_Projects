@@ -1,0 +1,20 @@
+/**********************************************************************************/
+/* Author : Amr Abdeen                                                            */
+/* Date   : 31 Jan. 2019                                                          */
+/* Version: V01                                                                   */
+/**********************************************************************************/
+/* Description:                                                                   */
+/*--------------                                                                  */
+/* LED interface File is used to list LED driver APIs                             */
+/*                                                                                */
+/**********************************************************************************/
+
+#ifndef LED_INTERFACE_H_
+#define LED_INTERFACE_H_
+//  DIO_u8SetPinValue	(u8 u8PinNB, u8 u8PinValue);
+// #include "STD_TYPES.h"
+u8 DIO_u8init1(void);
+u8 u8_LedOn(u8 u8PinNB);
+u8 u8_LedOff(u8 u8PinNB);
+
+#endif /* LED_INTERFACE_H_ */

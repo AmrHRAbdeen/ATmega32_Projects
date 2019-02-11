@@ -1,0 +1,33 @@
+/**************************************************/
+/* Author      :  amr Abdeen                      */
+/* Date        : 7/2/2019                         */
+/* Description :                                  */
+/*                                                */
+/*                                                */
+/**************************************************/
+#include "STD_TYPES.h"
+//#include "delay_ms_interface.h"
+#include "DIO_interface.h"
+#include "SSD_interface.h"
+
+#include <util/delay.h>
+
+u8 rows[8]={0b00000001,0b00000010,0b00000100,0b00001000,0b00010000,0b00100000,0b01000000,0b10000000};
+u8 columns[8]={64,38,153,121,121,153,38,64};
+int main(void){
+
+	DIO_voidInit();
+	while(1)
+	{
+		for(u8 i=0;i<8;i++)
+		{
+			DIO_u8SetPortnValue(3,rows[i]);
+			DIO_u8SetPortnValue(0,columns[i]);
+			_delay_ms(200);
+		}
+
+
+	}
+	return 0 ;
+}
+

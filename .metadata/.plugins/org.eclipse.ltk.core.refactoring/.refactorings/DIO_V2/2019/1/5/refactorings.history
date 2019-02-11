@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DIO_V2/ATmega32_Regsiters.h&apos; to &apos;priv.h&apos;" description="Rename resource &apos;ATmega32_Regsiters.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATmega32_Regsiters.h" name="priv.h" stamp="1548962454942" updateReferences="true"/>
+</session>

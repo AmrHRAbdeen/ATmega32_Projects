@@ -1,0 +1,99 @@
+15:34:11 **** Incremental Build of configuration Debug for project DIO_SEVEN_SEG_FINAL_DRIVER ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../LED_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED_prog.d" -MT"LED_prog.o" -c -o "LED_prog.o" "../LED_prog.c"
+Finished building: ../LED_prog.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:12:
+../LED_interface.h:16:1: warning: "PIN_OUTPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:61:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:18:1: warning: "PIN_INPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:62:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:20:1: warning: "PORT_DIR_OUTPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:64:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:22:1: warning: "PORT_DIR_INPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:65:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:24:1: warning: "PORT_VALUE_HIGH" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:67:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:26:1: warning: "PORT_VALUE_LOW" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:68:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:28:1: warning: "PIN_VALUE_INPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:70:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:30:1: warning: "PIN_VALUE_OUPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:71:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:32:1: warning: "PIN_DIR_INPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:72:1: warning: this is the location of the previous definition
+In file included from ../main.c:12:
+../LED_interface.h:34:1: warning: "PIN_DIR_OUTPUT" redefined
+In file included from ../main.c:8:
+../STD_TYPES.h:73:1: warning: this is the location of the previous definition
+In file included from ../main.c:14:
+e:/iti/assaf/setups/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../sevenSegment_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"sevenSegment_prog.d" -MT"sevenSegment_prog.o" -c -o "sevenSegment_prog.o" "../sevenSegment_prog.c"
+../sevenSegment_prog.c: In function 'sevenSegment_u8Display':
+../sevenSegment_prog.c:74: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:77: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:80: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:83: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:86: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:92: warning: large integer implicitly truncated to unsigned type
+../sevenSegment_prog.c:95: warning: large integer implicitly truncated to unsigned type
+Finished building: ../sevenSegment_prog.c
+ 
+Building target: DIO_SEVEN_SEG_FINAL_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_SEVEN_SEG_FINAL_DRIVER.map -mmcu=atmega32 -o "DIO_SEVEN_SEG_FINAL_DRIVER.elf"  ./DIO_prog.o ./LED_prog.o ./main.o ./sevenSegment_prog.o   
+Finished building target: DIO_SEVEN_SEG_FINAL_DRIVER.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_SEVEN_SEG_FINAL_DRIVER.elf  >"DIO_SEVEN_SEG_FINAL_DRIVER.lss"
+Finished building: DIO_SEVEN_SEG_FINAL_DRIVER.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_SEVEN_SEG_FINAL_DRIVER.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5724 bytes (17.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:34:13 Build Finished (took 2s.211ms)
+

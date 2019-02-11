@@ -1,0 +1,26 @@
+06:31:35 **** Build of configuration Debug for project SEENSEG_BCD ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SEENSEG_BCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SEENSEG_BCD.map -mmcu=atmega32 -o "SEENSEG_BCD.elf"  ./main.o   
+Finished building target: SEENSEG_BCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SEENSEG_BCD.elf  >"SEENSEG_BCD.lss"
+Finished building: SEENSEG_BCD.lss
+ 
+Invoking: Print Size
+avr-size --format=berkeley -t SEENSEG_BCD.elf
+   text	   data	    bss	    dec	    hex	filename
+    142	      0	      0	    142	     8e	SEENSEG_BCD.elf
+    142	      0	      0	    142	     8e	(TOTALS)
+Finished building: sizedummy
+ 
+
+06:31:36 Build Finished (took 946ms)
+

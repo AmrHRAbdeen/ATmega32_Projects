@@ -1,0 +1,83 @@
+
+/*Determine your ATmega's operating Frequency*/
+#define F_CPU 8000000UL
+
+#define OUTPUT 1
+#define INPUT  0
+#define HIGH   1
+#define LOW    0
+
+#define VALUE  HIGH 
+
+/**************************/
+/* OUTPUT:                */
+/**************************/
+#define DIO_PN0_DIR OUTPUT
+#define DIO_PN1_DIR OUTPUT
+#define DIO_PN2_DIR OUTPUT
+#define DIO_PN3_DIR OUTPUT
+#define DIO_PN4_DIR OUTPUT
+#define DIO_PN5_DIR OUTPUT
+#define DIO_PN6_DIR OUTPUT
+#define DIO_PN7_DIR OUTPUT
+#define DIO_PN8_DIR OUTPUT
+#define DIO_PN9_DIR OUTPUT
+#define DIO_PN10_DIR OUTPUT
+#define DIO_PN11_DIR OUTPUT
+#define DIO_PN12_DIR OUTPUT
+#define DIO_PN13_DIR OUTPUT
+#define DIO_PN14_DIR OUTPUT
+#define DIO_PN15_DIR OUTPUT
+#define DIO_PN16_DIR OUTPUT
+#define DIO_PN17_DIR OUTPUT
+#define DIO_PN18_DIR OUTPUT
+#define DIO_PN19_DIR OUTPUT
+#define DIO_PN20_DIR OUTPUT
+#define DIO_PN21_DIR OUTPUT
+#define DIO_PN22_DIR OUTPUT
+#define DIO_PN23_DIR OUTPUT
+#define DIO_PN24_DIR OUTPUT
+#define DIO_PN25_DIR OUTPUT
+#define DIO_PN26_DIR OUTPUT
+#define DIO_PN27_DIR OUTPUT
+#define DIO_PN28_DIR OUTPUT
+#define DIO_PN29_DIR OUTPUT
+#define DIO_PN30_DIR OUTPUT
+#define DIO_PN31_DIR OUTPUT
+
+/**************************/
+/* PORT:                */
+/**************************/
+
+#define DIO_PN0_VALUE VALUE
+#define DIO_PN1_VALUE VALUE
+#define DIO_PN2_VALUE VALUE
+#define DIO_PN3_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE
+#define DIO_PN4_VALUE VALUE

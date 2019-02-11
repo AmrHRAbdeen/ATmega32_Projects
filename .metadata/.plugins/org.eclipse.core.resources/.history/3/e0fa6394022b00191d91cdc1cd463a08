@@ -1,0 +1,17 @@
+/*
+ * SW_interface.h
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Amr Abdeen
+ */
+
+#ifndef SW_INTERFACE_H_
+#define SW_INTERFACE_H_
+
+/*API*/
+u8 SWI_u8GetSwitchState(u8 *Pu8State);
+
+#define SWI_SW_RELEASED SW_RELEASED
+#define SWI_SW_PRESSED  SW_PRESSED
+
+#endif /* SW_INTERFACE_H_ */

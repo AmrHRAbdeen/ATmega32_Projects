@@ -1,0 +1,24 @@
+22:27:21 **** Incremental Build of configuration Debug for project DIO_V2 ****
+make all 
+Building file: E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c"
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:8:22: error: BIT_CALC.h: No such file or directory
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c: In function 'DIO_u8SetPinDirection':
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:72: warning: implicit declaration of function 'ASSIGN_BIT'
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c: In function 'DIO_u8GetPinValue':
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:129: warning: implicit declaration of function 'GET_BIT'
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c: In function 'DIO_u8SetPortDirection':
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:153: warning: implicit declaration of function 'SET_PORT_DIRECTION'
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c: In function 'DIO_u8SetPortnValue':
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:176: warning: implicit declaration of function 'SET_PORT_VALUE'
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c: In function 'GPIO_init':
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:220: error: 'ERROR_NOT_OK' undeclared (first use in this function)
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:220: error: (Each undeclared identifier is reported only once
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:220: error: for each function it appears in.)
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:220: warning: unused variable 'u8ErrorState'
+E:/iTi/Assaf/Interfacing/Projects/DIO_DRIVER/DIO_prog.c:292: warning: control reaches end of non-void function
+make: *** [DIO_prog.o] Error 1
+
+22:27:21 Build Finished (took 646ms)
+
