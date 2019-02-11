@@ -1,0 +1,20 @@
+14:23:30 **** Incremental Build of configuration Debug for project 7amok4a_KickFootBall ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 7amok4a_KickFootBall.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5526 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (2.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:23:30 Build Finished (took 570ms)
+

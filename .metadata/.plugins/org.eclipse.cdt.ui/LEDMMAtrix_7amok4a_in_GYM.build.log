@@ -1,4 +1,4 @@
-02:47:19 **** Incremental Build of configuration Debug for project LEDMMAtrix_7amok4a_in_GYM ****
+14:20:12 **** Incremental Build of configuration Debug for project LEDMMAtrix_7amok4a_in_GYM ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 LEDMMAtrix_7amok4a_in_GYM.elf
@@ -16,5 +16,5 @@ Data:         40 bytes (2.0% Full)
 Finished building: sizedummy
  
 
-02:47:19 Build Finished (took 502ms)
+14:20:12 Build Finished (took 455ms)
 

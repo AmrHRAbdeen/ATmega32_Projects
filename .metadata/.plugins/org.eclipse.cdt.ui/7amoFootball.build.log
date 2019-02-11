@@ -1,4 +1,4 @@
-13:10:35 **** Incremental Build of configuration Debug for project 7amoFootball ****
+14:33:11 **** Incremental Build of configuration Debug for project 7amoFootball ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
@@ -26,15 +26,15 @@ AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    5518 bytes (16.8% Full)
+Program:    5510 bytes (16.8% Full)
 (.text + .data + .bootloader)
 
-Data:         48 bytes (2.3% Full)
+Data:         40 bytes (2.0% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-13:10:36 Build Finished (took 1s.267ms)
+14:33:12 Build Finished (took 1s.457ms)
 

@@ -1,0 +1,40 @@
+14:14:11 **** Incremental Build of configuration Debug for project 7mok4a_ThrowFootBall ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:13:
+e:/iti/assaf/setups/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: 7mok4a_ThrowFootBall.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,7mok4a_ThrowFootBall.map -mmcu=atmega16 -o "7mok4a_ThrowFootBall.elf"  ./DIO_prog.o ./delay_ms_prog.o ./main.o   
+Finished building target: 7mok4a_ThrowFootBall.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S 7mok4a_ThrowFootBall.elf  >"7mok4a_ThrowFootBall.lss"
+Finished building: 7mok4a_ThrowFootBall.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex 7mok4a_ThrowFootBall.elf  "7mok4a_ThrowFootBall.hex"
+Finished building: 7mok4a_ThrowFootBall.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 7mok4a_ThrowFootBall.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    2274 bytes (13.9% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:14:12 Build Finished (took 1s.518ms)
+
