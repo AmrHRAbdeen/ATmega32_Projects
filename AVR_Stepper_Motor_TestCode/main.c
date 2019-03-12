@@ -20,6 +20,7 @@
 	 *==========================
 	 * Stepper Motor Connection:-
 	 *---------------------------
+	 * MOTOR Common Wire --> VCC
 	 * ULN2003  ----> MOTOR
 	 * OUT-PIN1 ----> YELLOW WIRE
 	 * OUT-PIN2 ----> ORANGE WIRE
