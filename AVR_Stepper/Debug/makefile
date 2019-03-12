@@ -30,47 +30,47 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-LEDMMAtrix_7amok4a_in_GYM.lss \
+AVR_Stepper.lss \
 
 FLASH_IMAGE += \
-LEDMMAtrix_7amok4a_in_GYM.hex \
+AVR_Stepper.hex \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: LEDMMAtrix_7amok4a_in_GYM.elf secondary-outputs
+all: AVR_Stepper.elf secondary-outputs
 
 # Tool invocations
-LEDMMAtrix_7amok4a_in_GYM.elf: $(OBJS) $(USER_OBJS)
+AVR_Stepper.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,LEDMMAtrix_7amok4a_in_GYM.map -mmcu=atmega32 -o "LEDMMAtrix_7amok4a_in_GYM.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,AVR_Stepper.map -mmcu=atmega32 -o "AVR_Stepper.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-LEDMMAtrix_7amok4a_in_GYM.lss: LEDMMAtrix_7amok4a_in_GYM.elf
+AVR_Stepper.lss: AVR_Stepper.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S LEDMMAtrix_7amok4a_in_GYM.elf  >"LEDMMAtrix_7amok4a_in_GYM.lss"
+	-avr-objdump -h -S AVR_Stepper.elf  >"AVR_Stepper.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LEDMMAtrix_7amok4a_in_GYM.hex: LEDMMAtrix_7amok4a_in_GYM.elf
+AVR_Stepper.hex: AVR_Stepper.elf
 	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LEDMMAtrix_7amok4a_in_GYM.elf  "LEDMMAtrix_7amok4a_in_GYM.hex"
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_Stepper.elf  "AVR_Stepper.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: LEDMMAtrix_7amok4a_in_GYM.elf
+sizedummy: AVR_Stepper.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=berkeley -t LEDMMAtrix_7amok4a_in_GYM.elf
+	-avr-size --format=avr --mcu=atmega32 AVR_Stepper.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) LEDMMAtrix_7amok4a_in_GYM.elf
+	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) AVR_Stepper.elf
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(FLASH_IMAGE) $(SIZEDUMMY)

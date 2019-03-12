@@ -30,50 +30,59 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-LEDMMAtrix_7amok4a_in_GYM.lss \
+KPD_Driver.lss \
 
 FLASH_IMAGE += \
-LEDMMAtrix_7amok4a_in_GYM.hex \
+KPD_Driver.hex \
 
 SIZEDUMMY += \
 sizedummy \
 
+AVRDUDEDUMMY += \
+avrdudedummy \
+
 
 # All Target
-all: LEDMMAtrix_7amok4a_in_GYM.elf secondary-outputs
+all: KPD_Driver.elf secondary-outputs
 
 # Tool invocations
-LEDMMAtrix_7amok4a_in_GYM.elf: $(OBJS) $(USER_OBJS)
+KPD_Driver.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,LEDMMAtrix_7amok4a_in_GYM.map -mmcu=atmega32 -o "LEDMMAtrix_7amok4a_in_GYM.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,KPD_Driver.map -mmcu=atmega32 -o "KPD_Driver.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-LEDMMAtrix_7amok4a_in_GYM.lss: LEDMMAtrix_7amok4a_in_GYM.elf
+KPD_Driver.lss: KPD_Driver.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S LEDMMAtrix_7amok4a_in_GYM.elf  >"LEDMMAtrix_7amok4a_in_GYM.lss"
+	-avr-objdump -h -S KPD_Driver.elf  >"KPD_Driver.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LEDMMAtrix_7amok4a_in_GYM.hex: LEDMMAtrix_7amok4a_in_GYM.elf
+KPD_Driver.hex: KPD_Driver.elf
 	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LEDMMAtrix_7amok4a_in_GYM.elf  "LEDMMAtrix_7amok4a_in_GYM.hex"
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KPD_Driver.elf  "KPD_Driver.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: LEDMMAtrix_7amok4a_in_GYM.elf
+sizedummy: KPD_Driver.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=berkeley -t LEDMMAtrix_7amok4a_in_GYM.elf
+	-avr-size --format=avr --mcu=atmega32 KPD_Driver.elf
+	@echo 'Finished building: $@'
+	@echo ' '
+
+avrdudedummy: KPD_Driver.elf
+	@echo 'Invoking: AVRDude'
+	C:\Users\Monika Ossama\Desktop\Mina\Assaf\SDK\IMT_SDK_Win_64\WinAVR\bin\avrdude -pm32 -cusbasp -Uflash:w:KPD_Driver.hex:a
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) LEDMMAtrix_7amok4a_in_GYM.elf
+	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(AVRDUDEDUMMY)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) KPD_Driver.elf
 	-@echo ' '
 
-secondary-outputs: $(LSS) $(FLASH_IMAGE) $(SIZEDUMMY)
+secondary-outputs: $(LSS) $(FLASH_IMAGE) $(SIZEDUMMY) $(AVRDUDEDUMMY)
 
 .PHONY: all clean dependents
 .SECONDARY:
