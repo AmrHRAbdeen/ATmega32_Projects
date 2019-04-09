@@ -33,20 +33,41 @@
 #include "DIO_interface.h"
 #include "delay_ms_interface.h"
 
+void StepperCCW(void);
+void StepperCW(void);
+
 int main(void){
 
 	DIO_voidInit();
+
 	while(1)
 	{
-		DIO_u8SetPortnValue(0,0xFE);
-		delay_milliSecond(4);
-		DIO_u8SetPortnValue(0,0xFD);
-		delay_milliSecond(4);
-		DIO_u8SetPortnValue(0,0xFB);
-		delay_milliSecond(4);
-		DIO_u8SetPortnValue(0,0xF7);
-		delay_milliSecond(4);
+		StepperCCW();
+
 	}
 	return 0 ;
 }
 
+void StepperCCW(void)
+{
+	DIO_u8SetPortnValue(0,0xF7);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xFB);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xFD);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xFE);
+	delay_milliSecond(4);
+}
+
+void StepperCW(void)
+{
+	DIO_u8SetPortnValue(0,0xFE);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xFD);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xFB);
+	delay_milliSecond(4);
+	DIO_u8SetPortnValue(0,0xF7);
+	delay_milliSecond(4);
+}

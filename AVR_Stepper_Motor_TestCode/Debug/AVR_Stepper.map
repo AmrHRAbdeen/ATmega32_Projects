@@ -1,11 +1,11 @@
 Archive member included because of file (symbol)
 
-d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
                               ./delay_ms_prog.o (__mulsi3)
-d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
                               ./delay_ms_prog.o (__udivmodsi4)
-d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                              d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
 
 Memory Configuration
 
@@ -20,13 +20,13 @@ signature        0x00840000         0x00000400         rw !x
 
 Linker script and memory map
 
-LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
 LOAD ./DIO_prog.o
 LOAD ./delay_ms_prog.o
 LOAD ./main.o
-LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
-LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
-LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 
 .hash
  *(.hash)
@@ -118,9 +118,9 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x90c
+.text           0x00000000      0x97c
  *(.vectors)
- .vectors       0x00000000       0x54 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .vectors       0x00000000       0x54 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
                 0x00000000                __vector_default
  *(.vectors)
@@ -145,13 +145,13 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000054        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .init0         0x00000054        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000054                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000054        0xc d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .init2         0x00000054        0xc f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -166,10 +166,10 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000060        0x8 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .init9         0x00000060        0x8 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
  *(.init9)
  *(.text)
- .text          0x00000068        0x4 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .text          0x00000068        0x4 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000068                __vector_1
                 0x00000068                __vector_12
                 0x00000068                __bad_interrupt
@@ -194,9 +194,9 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  .text          0x0000006c        0x0 ./DIO_prog.o
  .text          0x0000006c        0x0 ./delay_ms_prog.o
  .text          0x0000006c        0x0 ./main.o
- .text          0x0000006c        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .text          0x0000006c        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .text          0x0000006c        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000006c        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x0000006c        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000006c        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
                 0x0000006c                . = ALIGN (0x2)
  *(.text.*)
  .text.DIO_voidInit
@@ -223,18 +223,24 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  .text.delay_milliSecond
                 0x00000736       0xf2 ./delay_ms_prog.o
                 0x00000736                delay_milliSecond
- .text.main     0x00000828       0x5e ./main.o
+ .text.main     0x00000828       0x12 ./main.o
                 0x00000828                main
- .text.libgcc   0x00000886       0x3e d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x00000886                __mulsi3
- .text.libgcc   0x000008c4       0x44 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x000008c4                __udivmodsi4
- .text.libgcc   0x00000908        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00000908                . = ALIGN (0x2)
+ .text.StepperCCW
+                0x0000083a       0x5e ./main.o
+                0x0000083a                StepperCCW
+ .text.StepperCW
+                0x00000898       0x5e ./main.o
+                0x00000898                StepperCW
+ .text.libgcc   0x000008f6       0x3e f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x000008f6                __mulsi3
+ .text.libgcc   0x00000934       0x44 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000934                __udivmodsi4
+ .text.libgcc   0x00000978        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000978                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000908        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00000908                exit
-                0x00000908                _exit
+ .fini9         0x00000978        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000978                exit
+                0x00000978                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -253,20 +259,20 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000908        0x4 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000978        0x4 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000090c                _etext = .
+                0x0000097c                _etext = .
 
-.data           0x00800060        0x0 load address 0x0000090c
+.data           0x00800060        0x0 load address 0x0000097c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
  .data          0x00800060        0x0 ./DIO_prog.o
  .data          0x00800060        0x0 ./delay_ms_prog.o
  .data          0x00800060        0x0 ./main.o
- .data          0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .data          0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
@@ -278,18 +284,18 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
 .bss            0x00800060        0x0
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
  .bss           0x00800060        0x0 ./DIO_prog.o
  .bss           0x00800060        0x0 ./delay_ms_prog.o
  .bss           0x00800060        0x0 ./main.o
- .bss           0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .bss           0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x00800060        0x0 d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800060        0x0 f:/iti/assaf/assaf apps/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.bss*)
  *(COMMON)
                 0x00800060                PROVIDE (__bss_end, .)
-                0x0000090c                __data_load_start = LOADADDR (.data)
-                0x0000090c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000097c                __data_load_start = LOADADDR (.data)
+                0x0000097c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 0x00800060                PROVIDE (__noinit_start, .)
@@ -314,17 +320,17 @@ LOAD d:/iti/assaf/setups/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
 .signature
  *(.signature*)
 
-.stab           0x00000000      0xa68
+.stab           0x00000000      0xb1c
  *(.stab)
  .stab          0x00000000      0x6fc ./DIO_prog.o
  .stab          0x000006fc      0x204 ./delay_ms_prog.o
                                 0x288 (size before relaxing)
- .stab          0x00000900      0x168 ./main.o
-                                0x1ec (size before relaxing)
+ .stab          0x00000900      0x21c ./main.o
+                                0x2a0 (size before relaxing)
 
-.stabstr        0x00000000      0x58e
+.stabstr        0x00000000      0x5b3
  *(.stabstr)
- .stabstr       0x00000000      0x58e ./DIO_prog.o
+ .stabstr       0x00000000      0x5b3 ./DIO_prog.o
 
 .stab.excl
  *(.stab.excl)

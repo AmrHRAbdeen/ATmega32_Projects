@@ -1621,7 +1621,7 @@ void DIO_voidInit(void)
     DDRA->ByteAccess=CONC_8bit (DIO_u8_PIN0_DIR,
      c96:	ea e3       	ldi	r30, 0x3A	; 58
      c98:	f0 e0       	ldi	r31, 0x00	; 0
-     c9a:	80 ef       	ldi	r24, 0xF0	; 240
+     c9a:	8f ef       	ldi	r24, 0xFF	; 255
      c9c:	80 83       	st	Z, r24
                            DIO_u8_PIN5_DIR,
                            DIO_u8_PIN6_DIR,
@@ -1651,7 +1651,7 @@ void DIO_voidInit(void)
      DDRD->ByteAccess=CONC_8bit(DIO_u8_PIN24_DIR,
      cae:	e1 e3       	ldi	r30, 0x31	; 49
      cb0:	f0 e0       	ldi	r31, 0x00	; 0
-     cb2:	8f ef       	ldi	r24, 0xFF	; 255
+     cb2:	80 ef       	ldi	r24, 0xF0	; 240
      cb4:	80 83       	st	Z, r24
                            DIO_u8_PIN31_DIR
     );

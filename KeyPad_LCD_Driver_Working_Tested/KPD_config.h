@@ -29,19 +29,19 @@
 
 u8 KPD_Au8KpdInputConnection[KPD_NUM_OF_INPUTS]=
 {
-		DIO_u8_PIN0,
-		DIO_u8_PIN1,
-		DIO_u8_PIN2,
-		DIO_u8_PIN3
+		DIO_u8_PIN16,
+		DIO_u8_PIN17,
+		DIO_u8_PIN18,
+		DIO_u8_PIN19
 
 };
 u8 KPD_Au8KpdOutputConnection[KPD_NUM_OF_OUTPUTS]=
 {
 
-		DIO_u8_PIN4,
-		DIO_u8_PIN5,
-		DIO_u8_PIN6,
-		DIO_u8_PIN7
+		DIO_u8_PIN20,
+		DIO_u8_PIN21,
+		DIO_u8_PIN22,
+		DIO_u8_PIN23
 };
 
 #endif /* KPD_CONFIG_H_ */
