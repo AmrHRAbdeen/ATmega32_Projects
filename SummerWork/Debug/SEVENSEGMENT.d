@@ -1,0 +1,5 @@
+SEVENSEGMENT.o SEVENSEGMENT.o: ../SEVENSEGMENT.c ../TYPES.h ../DIO.h
+
+../TYPES.h:
+
+../DIO.h:

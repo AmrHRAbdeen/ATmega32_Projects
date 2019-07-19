@@ -1,0 +1,5 @@
+DCMOTOR.o DCMOTOR.o: ../DCMOTOR.c ../TYPES.h ../TIMER2.h
+
+../TYPES.h:
+
+../TIMER2.h:
